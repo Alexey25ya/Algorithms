@@ -8,9 +8,10 @@ public class Main {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             while (true) {
                 try {
+                    System.out.println("Введите элемент для добавления:");
                     int value = Integer.parseInt(reader.readLine());
                     tree.add(value);
-                    System.out.println("finish");
+                    System.out.println("Элемент " + value + " добавлен");
                 } catch (Exception ignored) {
 
                 }
